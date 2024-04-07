@@ -1,16 +1,22 @@
 body{
     display: flex;
     box-sizing: border-box;
+    margin: 0px;
 }
+@font-face{
+    font-family:odin-custom;
+    src:url(/Norse-Bold.otf);
+}
+
 .imageView img{
     height: 100vh;
     width: auto;
-    flex:1 1 40vw;
+    flex:1;
 }
 .forms{
     display: flex;
     flex-direction: column;
-    flex:2 1 60vw;
+    flex:2 60vw;
     gap: 1rem;
     box-sizing: border-box;
     justify-content: center;
@@ -19,7 +25,10 @@ body{
 }
 form{
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
+}
+label,h2,button{
+    font-family: odin-custom;
 }
 input{
     width: 12rem;
@@ -50,4 +59,29 @@ button{
     width: 11rem;
     height: 3rem;
     box-shadow: 1px 2px 5px gray;
+}
+p{
+    font-family: odin-custom;
+    font-size: large;
+    font-weight: bold;
+}
+.imageView,.forms{
+    position: relative;
+    width:100%;  
+}
+.backImage{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.logoView{
+    position: absolute;
+    width: 93%;
+    height: 4rem;
+    background: black;
+    opacity: 0.6;
+    margin-top: 60%;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
 }
