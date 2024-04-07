@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    box-sizing: border-box;
+}
+.imageView img{
+    height: 100vh;
+    width: auto;
+    flex:1 1 40vw;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    flex:2 1 60vw;
+    gap: 1rem;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+form{
+    display: flex;
+    gap: 2rem;
+}
+input{
+    width: 12rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: solid 1px gray;
+}
+input:invalid{
+    border: none;
+    outline: solid 1px red;
+    box-shadow: 1px 1px 5px red;
+}
+input:focus{
+    border: none;
+    outline: solid 1px blue;
+    box-shadow: 1px 1px 5px blue;
+}
+.formBox{
+    padding: 2rem;
+    border: solid 1px gray;
+    box-shadow: 1px 4px 5px gray;
+    width: 60vw;
+}
+button{
+    background-color: rgb(67, 106, 67);
+    color:white;
+    border-radius: 8px;
+    width: 11rem;
+    height: 3rem;
+    box-shadow: 1px 2px 5px gray;
+}
